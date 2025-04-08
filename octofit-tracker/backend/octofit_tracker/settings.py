@@ -28,7 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'sturdy-parakeet-96rg6pxpr952xgqq.app.github.dev']
 
 # Add the codespace Django REST API endpoint suffix
-CODESPACE_API_SUFFIX = 'https://sturdy-parakeet-96rg6pxpr952xgqq.app.github.dev:8000/'
+CODESPACE_API_SUFFIX = 'https://sturdy-parakeet-96rg6pxpr952xgqq-8000.app.github.dev'
 
 
 # Application definition
