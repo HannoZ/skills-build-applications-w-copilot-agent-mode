@@ -3,10 +3,11 @@ from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from .serializers import UserSerializer, TeamSerializer, ActivitySerializer, LeaderboardSerializer, WorkoutSerializer
 from .models import User, Team, Activity, Leaderboard, Workout
+from django.conf import settings
 
 @api_view(['GET'])
 def api_root(request, format=None):
-    base_url = 'https://sturdy-parakeet-96rg6pxpr952xgqq.app.github.dev:8000/'
+    base_url = settings.CODESPACE_API_SUFFIX  # Use the codespace API suffix from settings.py
     return Response({
         'users': base_url + 'api/users/',
         'teams': base_url + 'api/teams/',
